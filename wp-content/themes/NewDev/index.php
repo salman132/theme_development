@@ -27,40 +27,48 @@
 
                 <!-- Post Content
                 ============================================= -->
+                <?php if ( have_posts() ) : ?>
                 <div class="postcontent nobottommargin clearfix">
 
                     <!-- Posts
                     ============================================= -->
                     <div id="posts">
                         <?php
-                        if( have_posts() ){
+
                             while( have_posts() ){
                                 the_post();
                                 ?>
                                 <div class="entry clearfix">
                                     <div class="entry-image">
 
-                                           <?php the_post_thumbnail( 'full',array('class'=> 'image_fade') );  ?>
+                                        <a href="<?php the_permalink(); ?>" data-lightbox="image">
+                                           <?php
+                                           if(has_post_thumbnail()) {
+
+                                               the_post_thumbnail('full', array('class' => 'image_fade'));
+                                           }
+                                           ?>
+                                        </a>
 
                                     </div>
                                     <div class="entry-title">
-                                        <h2><a href="single.html">This is a Standard post with a Preview Image</a></h2>
+                                        <h2><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></h2>
                                     </div>
                                     <ul class="entry-meta clearfix">
-                                        <li><i class="icon-calendar3"></i> 10th February 2014</li>
-                                        <li><a href="#"><i class="icon-user"></i> admin</a></li>
-                                        <li><i class="icon-folder-open"></i> <a href="#">General</a>, <a href="#">Media</a></li>
-                                        <li><a href="single.html#comments"><i class="icon-comments"></i> 13 Comments</a></li>
+                                        <li><i class="icon-calendar3"></i><?php  echo get_the_date(); ?></li>
+                                        <li><a href="<?php get_author_posts_url(get_the_author_meta('ID'))  ?>"><i class="icon-user"></i> <?php the_author(); ?></a></li>
+                                        <li><i class="icon-folder-open"></i> <?php the_category(' '); ?></li>
+                                        <li><a href="<?php  the_permalink(); ?>#comments"><i class="icon-comments"></i><?php comments_number('0'); ?></a></li>
                                     </ul>
                                     <div class="entry-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus voluptate id aperiam ea ipsum magni aut perspiciatis rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat atque vitae voluptatem libero at eveniet veritatis ab facere.</p>
-                                        <a href="single.html" class="more-link">Read More</a>
+                                        <?php  the_excerpt(); ?>
+                                        <a href="<?php  the_permalink(); ?>" class="more-link">Read More</a>
                                     </div>
                                 </div>
                             <?php
 
                             }
-                        }
+
 
                         ?>
 
@@ -71,11 +79,13 @@
                     <!-- Pagination
                     ============================================= -->
                     <ul class="pager nomargin">
-                        <li class="previous"><a href="#">&larr; Older</a></li>
-                        <li class="next"><a href="#">Newer &rarr;</a></li>
+                        <li class="previous"><?php next_posts_link('Previous'); ?>a</li>
+
+                        <li class="next"><?php previous_posts_link('Next'); ?></li>
                     </ul><!-- .pager end -->
 
                 </div><!-- .postcontent end -->
+                <?php endif; ?>
 
                 <?php get_sidebar();  ?>
 
