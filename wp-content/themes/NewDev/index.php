@@ -79,7 +79,7 @@
                     <!-- Pagination
                     ============================================= -->
                     <ul class="pager nomargin">
-                        <li class="previous"><?php next_posts_link('Previous'); ?>a</li>
+                        <li class="previous"><?php next_posts_link('Previous'); ?></li>
 
                         <li class="next"><?php previous_posts_link('Next'); ?></li>
                     </ul><!-- .pager end -->
