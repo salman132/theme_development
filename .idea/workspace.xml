@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365dbfd0-c0e8-41ed-81cb-3f8f00fb9720" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/single.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/NewDev/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,8 @@
       <workItem from="1575344437863" duration="1230000" />
       <workItem from="1575349491505" duration="8044000" />
       <workItem from="1575439539360" duration="18186000" />
-      <workItem from="1575522049292" duration="8397000" />
+      <workItem from="1575522049292" duration="9036000" />
+      <workItem from="1575799387992" duration="5497000" />
     </task>
     <servers />
   </component>
@@ -74,7 +75,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
