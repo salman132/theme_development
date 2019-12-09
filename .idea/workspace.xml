@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365dbfd0-c0e8-41ed-81cb-3f8f00fb9720" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/single.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/comments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/NewDev/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,8 @@
       <workItem from="1575349491505" duration="8044000" />
       <workItem from="1575439539360" duration="18186000" />
       <workItem from="1575522049292" duration="9036000" />
-      <workItem from="1575799387992" duration="5497000" />
+      <workItem from="1575799387992" duration="5553000" />
+      <workItem from="1575865839560" duration="13458000" />
     </task>
     <servers />
   </component>
@@ -82,5 +84,24 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>C:\xampp\htdocs\personal</wordpressPath>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wp-content/themes/NewDev/comments.php</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wp-content/themes/NewDev/comments.php</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
