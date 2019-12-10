@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365dbfd0-c0e8-41ed-81cb-3f8f00fb9720" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/comments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/NewDev/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/NewDev/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/NewDev/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/NewDev/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +66,8 @@
       <workItem from="1575439539360" duration="18186000" />
       <workItem from="1575522049292" duration="9036000" />
       <workItem from="1575799387992" duration="5553000" />
-      <workItem from="1575865839560" duration="13458000" />
+      <workItem from="1575865839560" duration="17596000" />
+      <workItem from="1575955250190" duration="4159000" />
     </task>
     <servers />
   </component>
@@ -100,6 +102,11 @@
           <url>file://$PROJECT_DIR$/wp-content/themes/NewDev/comments.php</url>
           <line>16</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wp-content/themes/NewDev/single.php</url>
+          <line>126</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

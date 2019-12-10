@@ -28,7 +28,9 @@ if(post_password_required()){
                     <div class="comment-author vcard">
 
 						<span class="comment-avatar clearfix">
-                            <?php get_avatar($comment,60); ?>
+                            <?php get_avatar($comment,60);
+
+                            ?>
 
                         </span>
 
@@ -40,9 +42,13 @@ if(post_password_required()){
 
                     <div class="comment-author"><?php comment_author(); ?><span><a href="#" title="Permalink to this comment"><?php comment_date();   ?></a></span></div>
 
-                    <?php
-                        comment_text();
-                                        ?>
+                   <p>
+                       <?php
+
+                       echo esc_html($comment->comment_content);
+
+                       ?>
+                   </p>
 
                 </div>
 

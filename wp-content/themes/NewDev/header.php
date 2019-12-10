@@ -12,7 +12,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Index Template</title>
+    <title><?php the_title(); ?></title>
 
 </head>
 
